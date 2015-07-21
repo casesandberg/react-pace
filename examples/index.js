@@ -4,9 +4,9 @@
 var React = require('react');
 require('../node_modules/normalize.css/normalize.css');
 
-console.log('yep');
+var Controller = require('./components/Controller');
 
 React.render(
-  React.createElement('div', null, 'Examples'),
+  React.createElement(Controller),
   document.getElementById('root')
 );

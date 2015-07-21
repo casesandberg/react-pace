@@ -950,16 +950,16 @@ Pace.start = function(_options) {
   }
 };
 
-if (typeof define === 'function' && define.amd) {
-  define(['pace'], function() {
-    return Pace;
-  });
-} else if (typeof exports === 'object') {
-  module.exports = Pace;
-} else {
-  if (options.startOnPageLoad) {
-    Pace.start();
-  }
-}
+// if (typeof define === 'function' && define.amd) {
+//   define(['pace'], function() {
+//     return Pace;
+//   });
+// } else if (typeof exports === 'object') {
+//   module.exports = Pace;
+// } else {
+//   if (options.startOnPageLoad) {
+//     Pace.start();
+//   }
+// }
 
 module.exports = Pace;

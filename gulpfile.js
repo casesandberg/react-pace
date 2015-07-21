@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var babel = require('babel/register');
+// var babel = require('babel/register');
 
 var path = require('path');
 var webpack = require('webpack');
@@ -20,7 +20,7 @@ var config = {
         {
           exclude: /node_modules/,
           test: /\.js$/,
-          loaders: ['react-hot-loader', 'babel-loader']
+          loaders: ['react-hot-loader']
         }, {
           test: /\.jsx$/,
           exclude: /node_modules/,
@@ -35,9 +35,9 @@ var config = {
       ]
     },
     resolve: {
-      // alias: {
-      //   'react-pace': path.resolve(__dirname, './src/Pace.jsx')
-      // },
+      alias: {
+        'react-pace': path.resolve(__dirname, './src/Pace.jsx')
+      },
       extensions: ['', '.js', '.jsx']
     },
     plugins: [
